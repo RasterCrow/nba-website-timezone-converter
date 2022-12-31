@@ -1,0 +1,21 @@
+{
+    "name": "NBA Timezone",
+    "description": "Automatically Change the NBA Games time to the GMT+1 timezone",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "nba.html",
+        "default_icon": "nba.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "background.js"
+            ],
+            "matches": [
+                "https://www.nba.com/games*",
+                "https://www.nba.com/games"
+            ]
+        }
+    ]
+}
